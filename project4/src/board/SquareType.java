@@ -1,8 +1,4 @@
 /*
- * Matheus Marcelino
- * CS 2430, section 6
- * Monopoly Landing-Frequency Simulation Programming Project 4 - Summer 2026
- *
  * Defines the SquareType enum: the behavioral category of a board square
  * (property, Chance, Community Chest, Go to Jail, railroad, utility, etc.),
  * which determines what happens when the player lands on it.

@@ -1,16 +1,12 @@
 /*
- * Name:    Matheus Marcelino
- * Course:  CS 2430, Section 6
- * Project: Programming Project 2 (Summer 2026)
- * File:    Main.java - driver that runs all Part 1 (ordinary set) and
- *          Part 2 (multiset) operations across multiple test cases and
- *          prints labeled results suitable for the report.
+ * Driver that runs all Part 1 (ordinary set) and Part 2 (multiset)
+ * operations across multiple test cases and prints labeled results.
  */
 
 import java.util.HashMap;
 
 /**
- * Entry point for Programming Project 2.
+ * Entry point for the sets-and-multisets project.
  *
  * <p>Runs three Part 1 test cases (ordinary sets via bit strings / boolean
  * arrays) and two Part 2 test cases (multisets / bags), printing clearly

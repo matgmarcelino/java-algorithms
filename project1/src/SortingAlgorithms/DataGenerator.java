@@ -2,10 +2,6 @@ package SortingAlgorithms;
 import java.util.Random;
 
 /**
- * Matheus Marcelino
- * CS 2430
- * Programming Project 1 - Summer 2026
- * Section 1 - Array / Dataset Generator
  * This class generates data to be modified
  * by the sorting algorithms
  */

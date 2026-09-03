@@ -1,8 +1,4 @@
 /*
- * Matheus Marcelino
- * CS 2430, section 6
- * Monopoly Landing-Frequency Simulation Programming Project 4 - Summer 2026
- *
  * Implements a shuffled deck of Chance or Community Chest cards, including the
  * contents of both decks, drawing from the draw pile onto the discard pile,
  * reshuffling the discards when the draw pile runs out, and returning a held

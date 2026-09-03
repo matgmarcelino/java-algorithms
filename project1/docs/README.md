@@ -1,16 +1,12 @@
 # Sorting Algorithm Comparison
 
-**CS 2430**
-**Programming Project**
-**Summer 2026**
-**Matheus Marcelino**
-**Salt Lake Community College**
+**Author:** Matheus Marcelino
 
 ---
 
 ## Overview
 
-This project implements four famous sorting algorithms in Java and measures the element-to-element comparison count accross all permutations with varying input sizes. The goal is to understand how theoretical complexity varies with small, concrete inputs.
+This project implements four classic sorting algorithms in Java and measures the exact element-to-element comparison count across every permutation of several small input sizes. The goal is to see how theoretical complexity plays out on small, concrete inputs, where constant factors and best/worst-case behavior matter as much as the asymptotic bound.
 
 **Algorithms implemented:**
 
@@ -25,17 +21,17 @@ This project implements four famous sorting algorithms in Java and measures the 
 
 ```
 src/SortingAlgorithms/
-├── sortingAlgorithms.java   | All four sorting algorithm implementations
-├── dataGenerator.java       | Generates static and random integer arrays
-├── testDriver.java          | Part 3: runs all algorithms and verifies correctness
-└── ResultsTable.java        | Part 4: generates a result table based on real execution
+├── SortingAlgorithms.java   | All four sorting algorithm implementations
+├── DataGenerator.java       | Generates static and random integer arrays
+├── testDriver.java          | Runs all algorithms and verifies correctness
+└── ResultsTable.java        | Generates a result table based on real execution
 ```
 
 ---
 
 ### Comparison Counting
 
-All four sorting algorithms share a `public static long comparisons` count that gets reset after each call. Every direct element-to-element comparison increments this counter by one, and the caller is able to read this counter to get the exact count for each run.
+All four sorting algorithms share a `public static long comparisons` count that gets reset after each call. Every direct element-to-element comparison increments this counter by one, and the caller can read the counter to get the exact count for each run.
 
 ### Test Driver (`testDriver.java`)
 
@@ -96,7 +92,7 @@ Shaker sort        1         6         3.75
 
 - **Merge sort** is the most consistent of the four. Its comparison count varies only by a small amount regardless of input. It guarantees O(n log n) behavior.
 - **Quick sort** has the widest range with large n as the current pivot strategy degrades on sorted or reversed sorted input.
-- **Heap sort** consistently has the highest average comparison count despite being O(n log n), as heapify always makes two comparisons per node regardless if a swap is
-- **Shaker sort** achieves the lowest average with a small n due to its slim overhead and early-exit optimization. However, since it is an O(n²) algorithm, as n grows, it would quickly fall behind the other algorithms.
+- **Heap sort** consistently has the highest average comparison count despite being O(n log n), as heapify always makes two comparisons per node regardless of whether a swap happens.
+- **Shaker sort** achieves the lowest average with a small n due to its slim overhead and early-exit optimization. However, since it is an O(n²) algorithm, as n grows it would quickly fall behind the other algorithms.
 
 ---

@@ -1,10 +1,6 @@
 package SortingAlgorithms;
 
 /**
- * Matheus Marcelino
- * CS 2430
- * Programming Project 1 - Summer 2026
- * Section 3 - Test Driver
  * Runs all four sorting algorithms on static and random arrays,
  * displaying input, sorted output, algorithm name, n value, and comparison count.
  */

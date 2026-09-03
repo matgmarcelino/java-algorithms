@@ -1,10 +1,7 @@
 /*
- * Name:    Matheus Marcelino
- * Course:  CS 2430, Section 6
- * Project: Programming Project 2 (Summer 2026)
- * File:    Universe.java - defines the fixed universe of colleges shared
- *          by BitStringSet and MultiSet. Both set classes read their
- *          element list from here, so the universe lives in exactly one place.
+ * Defines the fixed universe of colleges shared by BitStringSet and MultiSet.
+ * Both set classes read their element list from here, so the universe lives
+ * in exactly one place.
  */
 
 /**

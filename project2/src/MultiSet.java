@@ -1,11 +1,7 @@
 /*
- * Name:    Matheus Marcelino
- * Course:  CS 2430, Section 6
- * Project: Programming Project 2 (Summer 2026)
- * File:    MultiSet.java - implements multiset (bag) operations
- *          (union, intersection, difference, sum) over a collection
- *          where elements may appear more than once, using a HashMap
- *          to track the count of each element.
+ * Implements multiset (bag) operations (union, intersection, difference,
+ * sum) over a collection where elements may appear more than once, using a
+ * HashMap to track the count of each element.
  */
 
 import java.util.HashMap;

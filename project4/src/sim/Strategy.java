@@ -1,8 +1,4 @@
 /*
- * Matheus Marcelino
- * CS 2430, section 6
- * Monopoly Landing-Frequency Simulation Programming Project 4 - Summer 2026
- *
  * Defines the Strategy enum: the two jail-exit strategies compared by the
  * experiment, leaving jail immediately versus rolling for doubles for up to
  * three turns first.

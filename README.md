@@ -1,44 +1,38 @@
-# CS 2430 — Data Structures and Algorithm Analysis
+# Java Algorithms
 
-**Name:** Matheus Marcelino  
-**Course:** CS 2430  
-**Semester:** Summer 2026  
+**Author:** Matheus Marcelino
 **Repository:** https://github.com/matgmarcelino/CS2430
 
-## Purpose
+## Overview
 
-This repository contains all coursework for CS 2430. It is organized to keep source code, documentation, design notes, and supporting artifacts together for each programming project, making it easy to track progress and verify submitted work.
+A collection of algorithm and data-structure implementations in Java, each built as a small, self-contained project with its own experiment, correctness checks, and written analysis of the results. The focus throughout is on measuring and explaining algorithmic behavior rather than just implementing it: comparison counts, complexity classes, and empirical results are treated as first-class output alongside the code.
 
-## Project 0 Note
+### [Project 1 — Sorting Algorithm Comparison](project1/docs/README.md)
 
-Project 0 is a setup and research assignment. It covers programming paradigms, architectural patterns, design patterns, and repository organization. No programming project is submitted for Project 0. Projects 1–4 are in their respective folders.
+Implements and empirically compares four classic sorting algorithms in Java: merge sort, quick sort, heap sort, and shaker sort. Each algorithm tracks an exact element-to-element comparison count, verified for correctness across all n! permutations of static arrays of size n = 4, 6, and 8. Minimum, maximum, and average comparison counts are reported in a formatted table (`ResultsTable.java`), exposing how each algorithm's real-world comparison behavior diverges from its asymptotic complexity class.
 
-### Project 1 - Sorting Algorithm Comparison
+### [Project 2 — Sets and Multisets](project2/docs/README.md)
 
-Implements and compares four classic sorting algorithms in Java: merge sort, quick sort, heap sort, and shaker sort. Each algorithm includes an exact element-to-element comparison counter to verify performance. Correctness is verified accross all n! permutations static arrays size n = 4, 6, and 8. Minimum, maximum, and average comparison counts are reported with a formatted table in `ResultsTable.java`.
+Implements standard collection operations on two data structures in Java. Ordinary sets are represented as a bit-string over a `boolean[]`, where each bit corresponds to an element of a shared universe, supporting complement, union, intersection, difference, and symmetric difference in O(1) per operation. Multisets (bags) are implemented with a `HashMap<String, Integer>` mapping each element to its count, supporting union (max counts), intersection (min counts), difference (floored at zero), and sum. A `Main` driver exercises both implementations across a range of edge cases with labeled output.
 
-### Project 2 - Sets and Multisets
+### [Project 3 — Optimal Selection (0/1 Knapsack)](project3/docs/README.md)
 
-Implements standard collection operations on two kinds of sets in Java. Part 1 covers ordinary sets represented as a bit-string over a `boolean[]` where each bit corresponds to a college in a shared 12-college universe. It supports complement, union, intersection, difference, and symmetric difference. Part 2 covers multisets (otherwise known as bags) implemented with a `HashMap<String, Integer>` that maps every college to its count. It supports union (max counts), intersection (min counts), difference (floored at zero), and sum. A `Main` driver includes many test runs accross multiple edge cases and prints labeled output.
+Compares several strategies for solving an instance of the 0/1 knapsack problem: selecting the subset of items that maximizes total value without exceeding a fixed weight budget. Implements three greedy heuristics (highest value first, lightest weight first, best value-to-weight ratio), an exhaustive brute-force search over all 2^n subsets, and an optimal dynamic-programming solution using a `dp[i][c]` table with O(n · capacity) time, including backtracking to recover the chosen items. A driver runs every strategy and prints a side-by-side comparison of the results and their tradeoffs.
 
-### Project 3 - Optimal Selection
+### [Project 4 — Monte Carlo Board Simulation](project4/docs/README.md)
 
-Explores several strategies for finding an optimal subset within a lsit of experiments that maximizes total rating without exceeding a 700kg weight limit, an instance of the 0/1 knapsack problem. Part 1 implements three greedy strategies (sorting by highest rating first, lightest weight, and best rating-to-weight ratio). Part 2 implements an exhaustive, brute-force approach over all possible subsets, which is optimal but runs in O(2^n) time. Part 4 implements an optimal dynamic-programming solution with a `dp[i][c]` table and backtracks to recover the chosen experiments in O(n \* capacity) time. An `OptimizationStrategies` driver runs every strategy and prints the output from each implementation along with a summary comparing these approaches.
-
-### Project 4 - Monopoly Landing-Frequency Simulation
-
-A Monte Carlo simulation in Java of moving a single player around a standard 40 square Monopoly board, to see how frequently each square is landed on, and if and how different jail-exit strategies change these frequencies. The mechanics of two dice, doubles, Go to Jail, and the two card decks are implemented; money, property, and rent are left out as irrelevant to simply landing on the squares. The `board` package contains the definitions of the board squares and their types, while the `cards` package implements the two card decks and their effects. The `sim` package contains the player state, the two exit-strategy implementations (“immediately exit” versus “try to roll doubles”), and one preseeded run for easy reproducing of results. A `BatchRunner` class is used to perform 10 runs per strategy, with output checkpoints every 1,000 / 10,000 / 100,000 / 1,000,000 turns, resulting in 80 CSV snapshots and a summary.txt file written to `data/`. Since variance in strategies is only shown when it exceeds the variance of the ten runs for a given strategy, it does not dominate the results and skew them.
+A Monte Carlo simulation in Java modeling a player moving around a standard 40-square board game, measuring how landing frequency shifts under different rule-based strategies. Dice movement, doubles, a "go to jail" mechanic, and two card decks are all modeled explicitly. The `board` package defines the board layout, `cards` implements the two decks and their effects, and `sim` contains the player state, two competing strategy implementations, and a `BatchRunner` that performs 10 runs per strategy with checkpoints at 1,000 / 10,000 / 100,000 / 1,000,000 turns, producing 80 CSV snapshots and a statistical summary written to `data/`.
 
 ## Repository Structure
 
 ```
-CS2430/
+.
 ├── README.md
 ├── .gitignore
 ├── project1/
 │   ├── src/SortingAlgorithms/
-│   │   ├── sortingAlgorithms.java
-│   │   ├── dataGenerator.java
+│   │   ├── SortingAlgorithms.java
+│   │   ├── DataGenerator.java
 │   │   ├── testDriver.java
 │   │   └── ResultsTable.java
 │   └── docs/
@@ -52,7 +46,7 @@ CS2430/
 │   └── docs/
 │       └── README.md
 ├── project3/
-│   ├──src/
+│   ├── src/
 │   │   ├── Experiment.java
 │   │   ├── SubsetGenerator.java
 │   │   └── OptimizationStrategies.java
@@ -78,4 +72,4 @@ CS2430/
         └── README.md
 ```
 
-Each `project#/` folder will hold the source code for that assignment. The `docs/` subfolder inside each project is for supporting materials: design sketches, pseudocode, diagrams, and any written notes produced during development.
+Each `project#/` folder holds the source for that implementation. The `docs/` subfolder inside each project holds its detailed README, including project structure, design notes, and results.

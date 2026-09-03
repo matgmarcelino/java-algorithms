@@ -1,8 +1,4 @@
 /*
- * Matheus Marcelino
- * CS 2430, section 6
- * Optimal Selection Programming Project 3 - Summer 2026
- *
  * Defines the Experiment data type: an immutable record of an experiment's
  * name, weight, and rating, with accessors used by the selection strategies.
  */

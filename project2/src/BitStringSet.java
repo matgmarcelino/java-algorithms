@@ -1,11 +1,7 @@
 /*
- * Name:    Matheus Marcelino
- * Course:  CS 2430, Section 6, Part 1
- * Project: Programming Project 2 (Summer 2026)
- * File:    BitStringSet.java - implements ordinary set operations
- *          (complement, union, intersection, difference, symmetric
- *          difference) over a fixed universe of colleges, using a
- *          boolean array as the bit-string representation.
+ * Implements ordinary set operations (complement, union, intersection,
+ * difference, symmetric difference) over a fixed universe of colleges, using
+ * a boolean array as the bit-string representation.
  */
 
 import java.util.ArrayList;

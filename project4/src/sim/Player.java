@@ -1,8 +1,4 @@
 /*
- * Matheus Marcelino
- * CS 2430, section 6
- * Monopoly Landing-Frequency Simulation Programming Project 4 - Summer 2026
- *
  * Holds the mutable state of the single simulated player: board position, jail
  * status, doubles rolled in a row, and any Get Out of Jail Free cards being
  * held.

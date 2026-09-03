@@ -1,8 +1,4 @@
 /*
- * Matheus Marcelino
- * CS 2430, section 6
- * Monopoly Landing-Frequency Simulation Programming Project 4 - Summer 2026
- *
  * Implements the core single-player Monte Carlo simulation: rolling two dice,
  * moving around the board, resolving Chance, Community Chest and Go to Jail
  * squares, applying the configured jail-exit strategy, and tallying how often

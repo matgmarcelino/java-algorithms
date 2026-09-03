@@ -1,9 +1,6 @@
 package SortingAlgorithms;
 
 /**
- * Matheus Marcelino
- * CS 2430
- * Programming Project 1 - Summer 2026
  * Part 4 - Results Table
  * Compares all four sorting algorithms across all permutations of n = 4, 6, and 8,
  * reporting minimum, maximum, and average comparison counts with interpretation.

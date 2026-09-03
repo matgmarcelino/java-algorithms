@@ -1,8 +1,4 @@
 /*
- * Matheus Marcelino
- * CS 2430, section 6
- * Optimal Selection Programming Project 3 - Summer 2026
- *
  * Provides a helper for generating the power set (all subsets) of a group of
  * experiments, used by the brute-force selection strategy.
  */

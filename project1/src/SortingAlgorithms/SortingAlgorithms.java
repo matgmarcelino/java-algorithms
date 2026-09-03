@@ -1,10 +1,6 @@
 package SortingAlgorithms;
 
 /**
- *  Matheus Marcelino
- *  CS 2430
- *  Programming Project 1 - Summer 2026
- *  Section 2 - Sorting Algorithms
  *  This class contains implementations of multiple sorting algorithms
  *  including Merge sort, Quick sort, Heap Sort, and Shaker sort.
  */

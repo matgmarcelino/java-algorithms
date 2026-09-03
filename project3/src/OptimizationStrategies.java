@@ -1,8 +1,4 @@
 /*
- * Matheus Marcelino
- * CS 2430, section 6
- * Optimal Selection Programming Project 3 - Summer 2026
- *
  * Contains the driver and the various strategies (greedy, brute-force, and
  * dynamic programming) for selecting the highest-rated subset of experiments
  * that fits within the weight budget.

@@ -1,8 +1,4 @@
 /*
- * Matheus Marcelino
- * CS 2430, section 6
- * Monopoly Landing-Frequency Simulation Programming Project 4 - Summer 2026
- *
  * Defines the Card data type: an immutable record of a single Chance or
  * Community Chest card, holding the card's effect and, for advance-to cards,
  * the board index it sends the player to.

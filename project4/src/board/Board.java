@@ -1,8 +1,4 @@
 /*
- * Matheus Marcelino
- * CS 2430, section 6
- * Monopoly Landing-Frequency Simulation Programming Project 4 - Summer 2026
- *
  * Defines the fixed 40-square Monopoly board: the name and behavioral type of
  * every square, plus the lookups the simulation uses to find a square's type
  * and the nearest railroad or utility ahead of a given position.

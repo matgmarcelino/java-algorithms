@@ -1,8 +1,4 @@
 /*
- * Matheus Marcelino
- * CS 2430, section 6
- * Monopoly Landing-Frequency Simulation Programming Project 4 - Summer 2026
- *
  * Defines the CardType enum: the movement effect a drawn card produces. Only
  * effects that change the player's position are modeled; every money-only card
  * collapses into a single no-op type.
